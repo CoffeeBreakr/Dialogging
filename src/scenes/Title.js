@@ -9,6 +9,7 @@ class Title extends Phaser.Scene {
 
         // load JSON (dialog)
         this.load.json('dialog', 'json/dialog.json');
+        this.load.json('macbeth', 'json/macbeth.json');
 
         // load images
         this.load.image('dialogbox', 'img/dialogbox.png');
@@ -17,6 +18,9 @@ class Title extends Phaser.Scene {
         this.load.image('jove', 'img/jove.png');
         this.load.image('neptune', 'img/neptune.png');
         this.load.image('macbeth', 'img/macbeth.png');
+        this.load.image('ladymacbeth', 'img/ladymacbeth.png');
+        this.load.image('servant', 'img/servant.png');
+        this.load.image('servant', 'img/scene.png');
 
         // load bitmap font
         this.load.bitmapFont('gem_font', 'font/gem.png', 'font/gem.xml');
@@ -24,7 +28,7 @@ class Title extends Phaser.Scene {
 
     create() {
         // add title text
-        this.add.bitmapText(centerX, centerY - 32, 'gem_font', 'THE ODYSSEY', 32).setOrigin(0.5);
+        this.add.bitmapText(centerX, centerY - 32, 'gem_font', 'MACBETH(?)', 32).setOrigin(0.5);
         this.add.bitmapText(centerX, centerY, 'gem_font', 'Press SPACE to start', 16).setOrigin(0.5);
 
         // create input
@@ -34,7 +38,7 @@ class Title extends Phaser.Scene {
     update() {
         // wait for player input
         if(Phaser.Input.Keyboard.JustDown(cursors.space)) {
-            this.scene.start("talkingScene");
+            this.scene.start("macbethScene");
         }
     }
 }

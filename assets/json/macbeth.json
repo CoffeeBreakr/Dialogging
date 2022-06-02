@@ -1,58 +1,67 @@
 [
 	[
 		{
-			"speaker" : "homer",
-			"dialog" : "Hey what where am I?",
+			"speaker" : "ladymacbeth",
+			"dialog" : "Is Banquo gone from court?",
 			"newSpeaker" : "true"
 		},
 		{
-			"speaker" : "homer",
-			"dialog" : "Many cities did he visit, and many were the nations with whose manners and customs he was acquainted."
+			"speaker" : "servant",
+			"dialog" : "Ay, madam, but returns again to-night.",
+			"newSpeaker" : "true"
+			
 		},
 		{	
-			"speaker" : "homer",
-			"dialog" : "Moreover he suffered much by sea while trying to save his own life and bring his men safely home."
+			"speaker" : "ladymacbeth",
+			"dialog" : "Say to the king, I would attend his leisure",
+			"newSpeaker" : "true"
 		},
 		{	
-			"speaker" : "homer",
-			"dialog" : "But do what he might he could not save his men, for they perished through their own sheer folly in eating the cattle of the Sun-god Hyperion."
+			"speaker" : "ladymacbeth",
+			"dialog" : "For a few words."
 		},
 		{	
-			"speaker" : "homer",
-			"dialog" : "So the gods prevented them from ever reaching home."
-		},
-		{	
-			"speaker" : "homer",
-			"dialog" : "Tell me, too, about all these things, O daughter of Jove, from whatsoever source you may know them."
+			"speaker" : "servant",
+			"dialog" : "Madam, I will.",
+			"newSpeaker" : "true"
 		}
 	],
 	[
 		{
-			"speaker" : "neptune",
-			"dialog" : "See now, how men lay blame upon us gods for what is after all nothing but their own folly.",
+			"speaker" : "ladymacbeth",
+			"dialog" : "Nought's had, all's spent, Where our desire is got without content: Tis safer to be that which we destroy",
 			"newSpeaker" : "true"
 		},
 		{
-			"speaker" : "neptune",
-			"dialog" : "Look at Aegisthus; he must needs make love to Agamemnon's wife unrighteously and then kill Agamemnon, though he knew it would be the death of him."
-		},
-		{	
-			"speaker" : "minerva",
-			"dialog" : "Father, son of Saturn, King of kings, it served Aegisthus right, and so it would any one else who does as he did; but Aegisthus is neither here nor there.",
+			"speaker" : "macbeth",
+			"dialog" : "*Enter MACBETH*",
 			"newSpeaker" : "true"
 		},
-		{	
-			"speaker" : "minerva",
-			"dialog" : "It is for Ulysses that my heart bleeds, when I think of his sufferings in that lonely sea-girt island, far away, poor man, from all his friends."
-		},
-		{	
-			"speaker" : "jove",
-			"dialog" : "My child, what are you talking about? How can I forget Ulysses than whom there is no more capable man on earth, nor more liberal in his offerings to the immortal gods that live in heaven?",
+		{
+			"speaker" : "ladymacbeth",
+			"dialog" : "How now, my lord! why do you keep alone, Of sorriest fancies your companions making, Using those thoughts which should indeed have died With them they think on? Things without all remedy",
 			"newSpeaker" : "true"
 		},
-		{	
-			"speaker" : "minerva",
-			"dialog" : "If, then, the gods now mean that Ulysses should get home, we should first send Mercury to the Ogygian island to tell Calypso that we have made up our minds and that he is to return.",
+		{
+			"speaker" : "ladymacbeth",
+			"dialog" : " Should be without regard: what's done is done."
+		},
+		{
+			"speaker" : "macbeth",
+			"dialog" : "We have scotch'd the snake, not kill'd it: She'll close and be herself, whilst our poor malice. Remains in danger of her former tooth. But let the frame of things disjoint, both theworlds suffer",
+			"newSpeaker" : "true"
+		},
+		{
+			"speaker" : "macbeth",
+			"dialog" : "Ere we will eat our meal in fear and sleep. In the affliction of these terrible dreams. That shake us nightly: better be with the dead, Whom we, to gain our peace, have sent to peace,"
+		},
+		{
+			"speaker" : "macbeth",
+			"dialog" : "Than on the torture of the mind to lie. In restless ecstasy. Duncan is in his grave; After life's fitful fever he sleeps well; Treason has done his worst: nor steel, nor poison, Malice domestic, foreign levy, nothing, Can touch him further."
+		},
+		{
+			"speaker" : "ladymacbeth",
+			"dialog" : "Come on; Gentle my lord, sleek o'er your rugged looks; Be bright and jovial among your guests to-night.",
 			"newSpeaker" : "true"
 		}
 	]

@@ -29,9 +29,12 @@ class Macbeth extends Phaser.Scene {
 
         // character variables
         this.macbeth = null;
-        this.minerva = null;
-        this.neptune = null;
-        this.jove = null;
+        this.ladymacbeth = null;
+        this.servant = null;
+        this.scene = null;
+        //this.minerva = null;
+        //this.neptune = null;
+        //this.jove = null;
         this.tweenDuration = 500;
 
         this.OFFSCREEN_X = -500;        // x,y values to place characters offscreen
@@ -40,7 +43,7 @@ class Macbeth extends Phaser.Scene {
 
     create() {
         // parse dialog from JSON file
-        this.dialog = this.cache.json.get('dialog');
+        this.dialog = this.cache.json.get('macbeth');
         //console.log(this.dialog);
 
         // add dialog box sprite
@@ -52,9 +55,12 @@ class Macbeth extends Phaser.Scene {
 
         // ready the character dialog images offscreen
         this.macbeth = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'macbeth').setOrigin(0, 1);
-        this.minerva = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'minerva').setOrigin(0, 1);
-        this.neptune = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'neptune').setOrigin(0, 1);
-        this.jove = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'jove').setOrigin(0, 1);
+        this.ladymacbeth = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'ladymacbeth').setOrigin(0, 1);
+        this.servant = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'servant').setOrigin(0, 1);
+        this.scene = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'scene').setOrigin(0, 1);
+        //this.minerva = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'minerva').setOrigin(0, 1);
+        //this.neptune = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'neptune').setOrigin(0, 1);
+        //this.jove = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'jove').setOrigin(0, 1);
 
         // input
         cursors = this.input.keyboard.createCursorKeys();
@@ -111,6 +117,7 @@ class Macbeth extends Phaser.Scene {
             }
             // make text box invisible
             this.dialogbox.visible = false;
+            this.scene.start("talking");
 
         } else {
             // if not, set current speaker
