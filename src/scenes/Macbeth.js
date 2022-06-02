@@ -28,7 +28,7 @@ class Macbeth extends Phaser.Scene {
         this.nextText = null;			// player prompt text to continue typing
 
         // character variables
-        this.homer = null;
+        this.macbeth = null;
         this.minerva = null;
         this.neptune = null;
         this.jove = null;
@@ -51,7 +51,7 @@ class Macbeth extends Phaser.Scene {
         this.nextText = this.add.bitmapText(this.NEXT_X, this.NEXT_Y, this.DBOX_FONT, '', this.TEXT_SIZE);
 
         // ready the character dialog images offscreen
-        this.homer = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'homer').setOrigin(0, 1);
+        this.macbeth = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'macbeth').setOrigin(0, 1);
         this.minerva = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'minerva').setOrigin(0, 1);
         this.neptune = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'neptune').setOrigin(0, 1);
         this.jove = this.add.sprite(this.OFFSCREEN_X, this.DBOX_Y+8, 'jove').setOrigin(0, 1);
