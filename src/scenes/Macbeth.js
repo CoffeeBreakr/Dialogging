@@ -117,7 +117,7 @@ class Macbeth extends Phaser.Scene {
             }
             // make text box invisible
             this.dialogbox.visible = false;
-            this.scene.start("talking");
+            this.scene.start("talkingScene");
 
         } else {
             // if not, set current speaker
